@@ -3,7 +3,7 @@
 @author = xijue
 """
 
-from socket import *
+from code.socket import *
 
 HOST = '127.0.0.1'
 PORT = 2000
