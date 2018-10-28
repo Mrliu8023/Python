@@ -7,7 +7,6 @@ from socket import *
 from time import ctime
 import threading
 
-flag = 0
 
 def send(sock, none):
     while True:
@@ -17,8 +16,6 @@ def send(sock, none):
         msg = unicode(msg, 'utf-8')
         sock.send(msg.encode('utf-8'))
     sock.close()
-    global flag
-    flag = 1
 
 def recv(sock, BUFSIZ):
     global flag
@@ -33,7 +30,6 @@ def recv(sock, BUFSIZ):
         except Exception,e:
             break
     sock.close()
-    flag = 1
 
 def main():
     global flag
