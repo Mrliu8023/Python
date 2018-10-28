@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 """
-@author = xijue
+@author = xijue.
 """
 
 from socket import *
